@@ -97,7 +97,7 @@ namespace Train_03
             return new Toast();
         }
 
-        private static async Task<Bacon> FryBaconAsync(int slices)
+        private static async Task<Bacon> FryBaconAsync(int slices) 
         {
             Console.WriteLine($"putting {slices} slices of bacon in the pan");
             Console.WriteLine("cooking first side of bacon...");
