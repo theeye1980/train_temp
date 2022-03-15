@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,9 @@ namespace Train_03
 
         private void button1_Click(object sender, EventArgs e) // Сихнронный способ
         {
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+
             Coffee cup = PourCoffee();
             Console.WriteLine("coffee is ready");
 
@@ -36,6 +40,16 @@ namespace Train_03
             Juice oj = PourOJ();
             Console.WriteLine("oj is ready");
             Console.WriteLine("Breakfast is ready!");
+
+            //Стоп таймер - смотрим, сколько времени заняло все это дело
+            stopWatch.Stop();
+            TimeSpan ts = stopWatch.Elapsed;
+            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+            ts.Hours, ts.Minutes, ts.Seconds,
+            ts.Milliseconds / 10);
+
+            string Text = "Готово, затрачено  времени:";
+            MessageBox.Show(Text, elapsedTime);
         }
         private static Juice PourOJ()
         {

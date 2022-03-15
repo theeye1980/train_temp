@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Diagnostics;
 namespace Train_03
 {
     public partial class asyncBr : Form
@@ -19,11 +19,16 @@ namespace Train_03
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
             Mainer(null);
-
+            
+            
         }
 
         static async Task Mainer(string[] args) {
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+
             Coffee cup = PourCoffee();
             Console.WriteLine("coffee is ready");
 
@@ -54,6 +59,15 @@ namespace Train_03
             Juice oj = PourOJ();
             Console.WriteLine("oj is ready");
             Console.WriteLine("Breakfast is ready!");
+            //Стоп таймер - смотрим, сколько времени заняло все это дело
+            stopWatch.Stop();
+            TimeSpan ts = stopWatch.Elapsed;
+            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+            ts.Hours, ts.Minutes, ts.Seconds,
+            ts.Milliseconds / 10);
+
+            string Text = "Готово, затрачено  времени:";
+            MessageBox.Show(Text, elapsedTime);
         }
 
         static async Task<Toast> MakeToastWithButterAndJamAsync(int number)
@@ -61,7 +75,7 @@ namespace Train_03
             var toast = await ToastBreadAsync(number);
             ApplyButter(toast);
             ApplyJam(toast);
-
+            Task.Delay(5000).Wait();
             return toast;
         }
 
@@ -79,7 +93,7 @@ namespace Train_03
 
         private static void ApplyButter(Toast toast) {
             Console.WriteLine("Putting butter on the toast");
-             
+            Task.Delay(5000).Wait();
         }
         
 
