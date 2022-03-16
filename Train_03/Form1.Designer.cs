@@ -36,13 +36,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.NetworkProgressBar = new System.Windows.Forms.ProgressBar();
             this.выводНаФормуИзДругогоПотокаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.примерПараллельногоВыполненияЗадачToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.иЕщеПримерСФайломАндреяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.урокХрустAsyncToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.завтракToolStripMenuItem});
+            this.завтракToolStripMenuItem,
+            this.урокХрустAsyncToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -54,7 +58,9 @@
             this.завтракToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.асинхронныйЗавтракToolStripMenuItem,
             this.синхронныйЗавтракToolStripMenuItem,
-            this.выводНаФормуИзДругогоПотокаToolStripMenuItem});
+            this.выводНаФормуИзДругогоПотокаToolStripMenuItem,
+            this.примерПараллельногоВыполненияЗадачToolStripMenuItem,
+            this.иЕщеПримерСФайломАндреяToolStripMenuItem});
             this.завтракToolStripMenuItem.Name = "завтракToolStripMenuItem";
             this.завтракToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.завтракToolStripMenuItem.Text = "Завтрак";
@@ -107,6 +113,27 @@
             this.выводНаФормуИзДругогоПотокаToolStripMenuItem.Text = "Вывод на форму из другого потока";
             this.выводНаФормуИзДругогоПотокаToolStripMenuItem.Click += new System.EventHandler(this.выводНаФормуИзДругогоПотокаToolStripMenuItem_Click);
             // 
+            // примерПараллельногоВыполненияЗадачToolStripMenuItem
+            // 
+            this.примерПараллельногоВыполненияЗадачToolStripMenuItem.Name = "примерПараллельногоВыполненияЗадачToolStripMenuItem";
+            this.примерПараллельногоВыполненияЗадачToolStripMenuItem.Size = new System.Drawing.Size(312, 22);
+            this.примерПараллельногоВыполненияЗадачToolStripMenuItem.Text = "Пример параллельного выполнения задач";
+            this.примерПараллельногоВыполненияЗадачToolStripMenuItem.Click += new System.EventHandler(this.примерПараллельногоВыполненияЗадачToolStripMenuItem_Click);
+            // 
+            // иЕщеПримерСФайломАндреяToolStripMenuItem
+            // 
+            this.иЕщеПримерСФайломАндреяToolStripMenuItem.Name = "иЕщеПримерСФайломАндреяToolStripMenuItem";
+            this.иЕщеПримерСФайломАндреяToolStripMenuItem.Size = new System.Drawing.Size(312, 22);
+            this.иЕщеПримерСФайломАндреяToolStripMenuItem.Text = "И еще пример с файлом Андрея";
+            this.иЕщеПримерСФайломАндреяToolStripMenuItem.Click += new System.EventHandler(this.иЕщеПримерСФайломАндреяToolStripMenuItem_Click);
+            // 
+            // урокХрустAsyncToolStripMenuItem
+            // 
+            this.урокХрустAsyncToolStripMenuItem.Name = "урокХрустAsyncToolStripMenuItem";
+            this.урокХрустAsyncToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
+            this.урокХрустAsyncToolStripMenuItem.Text = "Урок Хруст - Async";
+            this.урокХрустAsyncToolStripMenuItem.Click += new System.EventHandler(this.урокХрустAsyncToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,6 +163,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ProgressBar NetworkProgressBar;
         private System.Windows.Forms.ToolStripMenuItem выводНаФормуИзДругогоПотокаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem примерПараллельногоВыполненияЗадачToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem иЕщеПримерСФайломАндреяToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem урокХрустAsyncToolStripMenuItem;
     }
 }
 

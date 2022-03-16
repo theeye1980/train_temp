@@ -5,14 +5,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4F086B57-A2A9-4850-9340-DFD0E4478E16}</ProjectGuid>
-    <LangVersion>10.0</LangVersion>
+    <LangVersion>8.0</LangVersion>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Train_03</RootNamespace>
     <AssemblyName>Train_03</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
+    <Deterministic>true</Deterministic> 
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AndreyFileDwld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AndreyFileDwld.Designer.cs">
+      <DependentUpon>AndreyFileDwld.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\asyncBr.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +65,18 @@
     </Compile>
     <Compile Include="Forms\getResponseFromOtherCurrent_frm.Designer.cs">
       <DependentUpon>getResponseFromOtherCurrent_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parallel_ex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parallel_ex.Designer.cs">
+      <DependentUpon>Parallel_ex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Xrust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Xrust.Designer.cs">
+      <DependentUpon>Xrust.cs</DependentUpon>
     </Compile>
     <Compile Include="Элементы завтрака\Bacon.cs" />
     <Compile Include="Forms\brackfast.cs">
@@ -79,6 +97,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Элементы завтрака\Toast.cs" />
+    <EmbeddedResource Include="Forms\AndreyFileDwld.resx">
+      <DependentUpon>AndreyFileDwld.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\asyncBr.resx">
       <DependentUpon>asyncBr.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +111,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\getResponseFromOtherCurrent_frm.resx">
       <DependentUpon>getResponseFromOtherCurrent_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parallel_ex.resx">
+      <DependentUpon>Parallel_ex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Xrust.resx">
+      <DependentUpon>Xrust.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -76,56 +76,28 @@ namespace Train_03
         }
 
 
-        static async Task<bool> GetSiteInfo()
-        {
-
-            await Task.Run(() =>
-            {
-                Thread currentThread = Thread.CurrentThread;
-                Console.WriteLine($"Id потока, который занимается получением данных от сайта: {currentThread.ManagedThreadId}");
-                string source = @"https://fandeco.ru/rest/1c/exportbuyall";
-                get_web_page_to_json_file(source, "Site_Price_cache_path.json");
-                //actions.Showmsg("Файл с данными по ценам сайта обновлен");
-
-            });
-            return true;
-        }
-
-        public static async Task get_web_page_to_json_file(string source, string filename)
-        {
-            try
-            {
-                WebClient client = new WebClient();
-                using (Stream stream = client.OpenRead(source))
-                {
-                    using (StreamReader reader = new StreamReader(stream))
-                    {
-                        string line = "";
-                        while ((line = reader.ReadLine()) != null)
-                        {
-                            //записываем в файл
-                            cache_writer(line, filename);
-                        }
-
-
-
-                    }
-                }
-
-            }
-            catch { MessageBox.Show("Не удалось загрузить файл Цен сайта в кеш."); }
-        }
-        public static void cache_writer(string content, string filename) // записывает список файлов в csv 
-        {
-            StreamWriter g = new StreamWriter(@"D:\ty\" + filename, false, Encoding.GetEncoding("Windows-1251"));
-            g.WriteLine(content);
-            g.Close();
-        }
-
         private void выводНаФормуИзДругогоПотокаToolStripMenuItem_Click(object sender, EventArgs e)
         {
             getResponseFromOtherCurrent_frm getResponseFromOtherCurrent_frm = new getResponseFromOtherCurrent_frm();
             getResponseFromOtherCurrent_frm.Visible = true;
+        }
+
+        private void примерПараллельногоВыполненияЗадачToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Parallel_ex Parallel_ex = new Parallel_ex();
+            Parallel_ex.Visible = true;
+        }
+
+        private void иЕщеПримерСФайломАндреяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AndreyFileDwld andreyFileDwld = new AndreyFileDwld();
+            andreyFileDwld.Visible = true;
+        }
+
+        private void урокХрустAsyncToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+               Xrust xrust = new Xrust();
+                xrust.Visible = true;
         }
     }
 }

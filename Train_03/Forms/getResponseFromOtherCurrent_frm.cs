@@ -43,7 +43,9 @@ namespace Train_03.Forms
         {
             if (InvokeRequired)
             {
-                BeginInvoke((Action)(() => SetText(ctrl, text)));
+                BeginInvoke(
+                    (Action)(() => SetText(ctrl, text))
+                );
                 return;
             }
 
