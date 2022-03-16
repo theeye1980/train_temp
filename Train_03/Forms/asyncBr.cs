@@ -26,6 +26,10 @@ namespace Train_03
         }
 
         static async Task Mainer(string[] args) {
+
+
+
+
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
 
@@ -53,7 +57,7 @@ namespace Train_03
                     Console.WriteLine("toast is ready");
                 }
                 breakfastTasks.Remove(finishedTask);
-                
+               
             }
 
             Juice oj = PourOJ();
