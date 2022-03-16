@@ -96,7 +96,7 @@ namespace Train_03.Forms
 
             });
             Thread t = new Thread(new ThreadStart(delegate {
-                int Count = 290000;
+                int Count = 120000;
                
                 for (int i = 0; i < Count; ++i)
                 {
@@ -111,6 +111,9 @@ namespace Train_03.Forms
                             label1.Text = "Файл скачан и сохранен";
                         }
                     }));
+                }
+                if (label1.Text == "Начинаем скачивание") {
+                    MessageBox.Show("Пока не удалось заскачать файл. Он продолжится скачиваться в фоновом режиме");
                 }
             }));
             Thread th2 = new Thread(async () =>
