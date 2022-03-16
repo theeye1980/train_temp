@@ -68,7 +68,7 @@ namespace Train_03.Forms
                 };
                 if (InvokeRequired)
                 {
-                    Invoke(action);
+                    BeginInvoke(action);
 
                 }
                 else action();

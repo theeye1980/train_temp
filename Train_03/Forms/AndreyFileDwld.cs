@@ -72,5 +72,77 @@ namespace Train_03.Forms
             g.Close();
         }
 
+        private void button2_Click(object sender, EventArgs e) // Другой способ
+        {
+
+            label1.Text = "Начинаем скачивание";
+            Thread th1 = new Thread(async () =>
+            {
+                await GetSiteInfo();
+                Action action = () =>
+                {
+                    
+                    label1.Text = "Скачивание завершено";
+                    
+                    progressBar1.Visible = false;
+                };
+                if (InvokeRequired)
+                {
+                    BeginInvoke(action);
+
+                }
+                else action();
+
+
+            });
+            Thread t = new Thread(new ThreadStart(delegate {
+                int Count = 290000;
+               
+                for (int i = 0; i < Count; ++i)
+                {
+                    this.Invoke(new ThreadStart(delegate
+                    {
+                        progressBar1.Maximum = Count;
+                        progressBar1.Value++;
+                        if (label1.Text == "Скачивание завершено") {
+                            //Thread.Sleep(1000);
+                            //progressBar1.Value = Count;
+                            progressBar1.Visible = false;
+                            label1.Text = "Файл скачан и сохранен";
+                        }
+                    }));
+                }
+            }));
+            Thread th2 = new Thread(async () =>
+            {
+                
+                Action action = () =>
+                {
+                    progressBar1.Value = 100;
+                    
+                };
+                if (InvokeRequired)
+                {
+                    BeginInvoke(action);
+
+                }
+                else action();
+
+
+            });
+
+            th1.Start();
+            t.Start();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
