@@ -46,18 +46,24 @@ namespace Train_03.Forms
                 //MessageBox.Show("Гы");
                 //myconn.Close();
 
-                using (var connection = new MySqlConnection("Server=92.53.96.116;User ID=theeye_calendar;Password=zG44XMwC;Database=theeye_calendar"))
+                string constr = "Server=92.53.96.116;User ID=theeye_calendar;Password=zG44XMwC;Database=theeye_calendar";
+                using (var connection = new MySqlConnection(constr))
                 {
                     connection.Open();
 
                     using (var command = new MySqlCommand("SELECT * FROM events", connection))
                     using (var reader = await command.ExecuteReaderAsync())
-                        while (await reader.ReadAsync())
+                        while (await reader.ReadAsync()) { 
                             Console.WriteLine(reader.GetString(0));
+                            Console.WriteLine(reader.GetString(1));
+                            Console.WriteLine(reader.GetString(2));
+
+                        }
+
 
 
                     // Retrieve all rows
-                   
+
                 }
             }
             catch { MessageBox.Show("Чет не то (("); }
