@@ -99,5 +99,11 @@ namespace Train_03
                Xrust xrust = new Xrust();
                 xrust.Visible = true;
         }
+
+        private void подключениеКУдаленнойБДНаTimewebToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            timeweb_bd timeweb_Bd = new timeweb_bd();
+            timeweb_Bd.Visible = true;  
+        }
     }
 }
