@@ -36,11 +36,13 @@
             this.примерПараллельногоВыполненияЗадачToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.иЕщеПримерСФайломАндреяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.урокХрустAsyncToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.бДToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.NetworkProgressBar = new System.Windows.Forms.ProgressBar();
-            this.бДToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,6 +113,21 @@
             this.урокХрустAsyncToolStripMenuItem.Text = "Урок Хруст - Async";
             this.урокХрустAsyncToolStripMenuItem.Click += new System.EventHandler(this.урокХрустAsyncToolStripMenuItem_Click);
             // 
+            // бДToolStripMenuItem
+            // 
+            this.бДToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem});
+            this.бДToolStripMenuItem.Name = "бДToolStripMenuItem";
+            this.бДToolStripMenuItem.Size = new System.Drawing.Size(34, 20);
+            this.бДToolStripMenuItem.Text = "БД";
+            // 
+            // подключениеКУдаленнойБДНаTimewebToolStripMenuItem
+            // 
+            this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem.Name = "подключениеКУдаленнойБДНаTimewebToolStripMenuItem";
+            this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem.Size = new System.Drawing.Size(306, 22);
+            this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem.Text = "Подключение к удаленной БД на timeweb";
+            this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem.Click += new System.EventHandler(this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem_Click);
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(35, 190);
@@ -137,26 +154,33 @@
             this.NetworkProgressBar.Size = new System.Drawing.Size(379, 23);
             this.NetworkProgressBar.TabIndex = 3;
             // 
-            // бДToolStripMenuItem
+            // button2
             // 
-            this.бДToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem});
-            this.бДToolStripMenuItem.Name = "бДToolStripMenuItem";
-            this.бДToolStripMenuItem.Size = new System.Drawing.Size(34, 20);
-            this.бДToolStripMenuItem.Text = "БД";
+            this.button2.Location = new System.Drawing.Point(529, 260);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(228, 23);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "пример параллелизма";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // подключениеКУдаленнойБДНаTimewebToolStripMenuItem
+            // button3
             // 
-            this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem.Name = "подключениеКУдаленнойБДНаTimewebToolStripMenuItem";
-            this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem.Size = new System.Drawing.Size(306, 22);
-            this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem.Text = "Подключение к удаленной БД на timeweb";
-            this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem.Click += new System.EventHandler(this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem_Click);
+            this.button3.Location = new System.Drawing.Point(529, 290);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(228, 23);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Параллельный for";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.NetworkProgressBar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -186,6 +210,8 @@
         private System.Windows.Forms.ToolStripMenuItem урокХрустAsyncToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem бДToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem подключениеКУдаленнойБДНаTimewebToolStripMenuItem;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 
