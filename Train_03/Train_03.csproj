@@ -84,6 +84,12 @@
     <Compile Include="Forms\asyncBr.Designer.cs">
       <DependentUpon>asyncBr.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\delegate_ex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\delegate_ex.Designer.cs">
+      <DependentUpon>delegate_ex.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\getResponseFromOtherCurrent_frm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\delegate_ex.resx">
+      <DependentUpon>delegate_ex.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\getResponseFromOtherCurrent_frm.resx">
       <DependentUpon>getResponseFromOtherCurrent_frm.cs</DependentUpon>

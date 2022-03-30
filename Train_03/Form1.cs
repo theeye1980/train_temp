@@ -262,5 +262,11 @@ namespace Train_03
             }
         }
         #endregion
+
+        private void семинарToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            delegate_ex ele = new delegate_ex();
+            ele.Visible = true;
+        }
     }
 }

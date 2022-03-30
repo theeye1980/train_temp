@@ -43,6 +43,8 @@
             this.NetworkProgressBar = new System.Windows.Forms.ProgressBar();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.делегатыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.семинарToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +53,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.завтракToolStripMenuItem,
             this.урокХрустAsyncToolStripMenuItem,
-            this.бДToolStripMenuItem});
+            this.бДToolStripMenuItem,
+            this.делегатыToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -174,6 +177,21 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // делегатыToolStripMenuItem
+            // 
+            this.делегатыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.семинарToolStripMenuItem});
+            this.делегатыToolStripMenuItem.Name = "делегатыToolStripMenuItem";
+            this.делегатыToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.делегатыToolStripMenuItem.Text = "Делегаты";
+            // 
+            // семинарToolStripMenuItem
+            // 
+            this.семинарToolStripMenuItem.Name = "семинарToolStripMenuItem";
+            this.семинарToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.семинарToolStripMenuItem.Text = "Семинар";
+            this.семинарToolStripMenuItem.Click += new System.EventHandler(this.семинарToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,6 +230,8 @@
         private System.Windows.Forms.ToolStripMenuItem подключениеКУдаленнойБДНаTimewebToolStripMenuItem;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ToolStripMenuItem делегатыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem семинарToolStripMenuItem;
     }
 }
 
