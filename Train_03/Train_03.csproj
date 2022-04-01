@@ -154,12 +154,6 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CurrentsFrm.resx">
-      <DependentUpon>CurrentsFrm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\delegat.resx">
-      <DependentUpon>delegat.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\getResponseFromOtherCurrent_frm.resx">
       <DependentUpon>getResponseFromOtherCurrent_frm.cs</DependentUpon>
     </EmbeddedResource>

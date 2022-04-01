@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+//using MySql.Data.MySqlClient;
 using System.Data.SqlClient;
 
 namespace Train_03.Forms
@@ -45,7 +45,7 @@ namespace Train_03.Forms
                 //myconn.Open();
                 //MessageBox.Show("Гы");
                 //myconn.Close();
-
+                /*
                 string constr = "Server=92.53.96.116;User ID=theeye_calendar;Password=zG44XMwC;Database=theeye_calendar";
                 using (var connection = new MySqlConnection(constr))
                 {
@@ -64,9 +64,11 @@ namespace Train_03.Forms
 
                     // Retrieve all rows
 
-                }
+                }*/
             }
             catch { MessageBox.Show("Чет не то (("); }
+                
         }
+
     }
 }
