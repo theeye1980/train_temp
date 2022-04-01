@@ -1,4 +1,6 @@
-﻿namespace Train_03
+﻿using System.Windows.Forms;
+
+namespace Train_03
 {
     partial class Form1
     {
@@ -228,8 +230,11 @@
         private System.Windows.Forms.ToolStripMenuItem урокХрустAsyncToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem бДToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem подключениеКУдаленнойБДНаTimewebToolStripMenuItem;
+        private ToolStripMenuItem делегатыToolStripMenuItem;
+        private ToolStripMenuItem fibonaciToolStripMenuItem;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private ToolStripMenuItem бекграундВыполнениеЗадачиToolStripMenuItem;
     }
 }
 
