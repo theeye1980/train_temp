@@ -38,11 +38,14 @@
             this.урокХрустAsyncToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.бДToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.делегатыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fibonaciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.NetworkProgressBar = new System.Windows.Forms.ProgressBar();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.бекграундВыполнениеЗадачиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +54,9 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.завтракToolStripMenuItem,
             this.урокХрустAsyncToolStripMenuItem,
-            this.бДToolStripMenuItem});
+            this.бДToolStripMenuItem,
+            this.делегатыToolStripMenuItem,
+            this.fibonaciToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -65,7 +70,8 @@
             this.синхронныйЗавтракToolStripMenuItem,
             this.выводНаФормуИзДругогоПотокаToolStripMenuItem,
             this.примерПараллельногоВыполненияЗадачToolStripMenuItem,
-            this.иЕщеПримерСФайломАндреяToolStripMenuItem});
+            this.иЕщеПримерСФайломАндреяToolStripMenuItem,
+            this.бекграундВыполнениеЗадачиToolStripMenuItem});
             this.завтракToolStripMenuItem.Name = "завтракToolStripMenuItem";
             this.завтракToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.завтракToolStripMenuItem.Text = "Завтрак";
@@ -128,6 +134,20 @@
             this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem.Text = "Подключение к удаленной БД на timeweb";
             this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem.Click += new System.EventHandler(this.подключениеКУдаленнойБДНаTimewebToolStripMenuItem_Click);
             // 
+            // делегатыToolStripMenuItem
+            // 
+            this.делегатыToolStripMenuItem.Name = "делегатыToolStripMenuItem";
+            this.делегатыToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.делегатыToolStripMenuItem.Text = "Делегаты";
+            this.делегатыToolStripMenuItem.Click += new System.EventHandler(this.делегатыToolStripMenuItem_Click);
+            // 
+            // fibonaciToolStripMenuItem
+            // 
+            this.fibonaciToolStripMenuItem.Name = "fibonaciToolStripMenuItem";
+            this.fibonaciToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.fibonaciToolStripMenuItem.Text = "Fibonaci";
+            this.fibonaciToolStripMenuItem.Click += new System.EventHandler(this.fibonaciToolStripMenuItem_Click);
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(35, 190);
@@ -174,6 +194,13 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // бекграундВыполнениеЗадачиToolStripMenuItem
+            // 
+            this.бекграундВыполнениеЗадачиToolStripMenuItem.Name = "бекграундВыполнениеЗадачиToolStripMenuItem";
+            this.бекграундВыполнениеЗадачиToolStripMenuItem.Size = new System.Drawing.Size(312, 22);
+            this.бекграундВыполнениеЗадачиToolStripMenuItem.Text = "Бекграунд выполнение задачи";
+            this.бекграундВыполнениеЗадачиToolStripMenuItem.Click += new System.EventHandler(this.бекграундВыполнениеЗадачиToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,6 +239,9 @@
         private System.Windows.Forms.ToolStripMenuItem подключениеКУдаленнойБДНаTimewebToolStripMenuItem;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ToolStripMenuItem делегатыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fibonaciToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem бекграундВыполнениеЗадачиToolStripMenuItem;
     }
 }
 

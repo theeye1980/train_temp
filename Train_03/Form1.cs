@@ -262,5 +262,23 @@ namespace Train_03
             }
         }
         #endregion
+
+        private void делегатыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            delegat delegat = new delegat();
+            delegat.Visible = true;
+        }
+
+        private void fibonaciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //fibonaci_frm fibonaci_Frm = new fibonaci_frm();
+            //fibonaci_Frm.Visible= true; 
+        }
+
+        private void бекграундВыполнениеЗадачиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CurrentsFrm currentsFrm = new CurrentsFrm();
+            currentsFrm.Visible = true;
+        }
     }
 }

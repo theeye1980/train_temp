@@ -72,6 +72,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DirectorySearcher.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms\AndreyFileDwld.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +86,18 @@
     </Compile>
     <Compile Include="Forms\asyncBr.Designer.cs">
       <DependentUpon>asyncBr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CurrentsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CurrentsFrm.Designer.cs">
+      <DependentUpon>CurrentsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\delegat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\delegat.Designer.cs">
+      <DependentUpon>delegat.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\getResponseFromOtherCurrent_frm.cs">
       <SubType>Form</SubType>
@@ -138,6 +153,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CurrentsFrm.resx">
+      <DependentUpon>CurrentsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\delegat.resx">
+      <DependentUpon>delegat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\getResponseFromOtherCurrent_frm.resx">
       <DependentUpon>getResponseFromOtherCurrent_frm.cs</DependentUpon>
